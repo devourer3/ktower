@@ -1,0 +1,77 @@
+[gd_scene load_steps=12 format=3 uid="uid://dm2a10ihbclc2"]
+
+[ext_resource type="Script" uid="uid://lw2ft52gdbtr" path="res://monster/monster_1.gd" id="1_8mbtm"]
+[ext_resource type="Texture2D" uid="uid://dgf3248omhl8b" path="res://monster/mon_1_walk.png" id="2_fbk7f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcknj"]
+atlas = ExtResource("2_fbk7f")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anewq"]
+atlas = ExtResource("2_fbk7f")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okhom"]
+atlas = ExtResource("2_fbk7f")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti22v"]
+atlas = ExtResource("2_fbk7f")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8vi4"]
+atlas = ExtResource("2_fbk7f")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ty51s"]
+atlas = ExtResource("2_fbk7f")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1s2j0"]
+atlas = ExtResource("2_fbk7f")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sdnmc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcknj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anewq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okhom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti22v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8vi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ty51s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1s2j0")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jiraf"]
+radius = 17.0
+height = 58.0
+
+[node name="Monster1" type="CharacterBody2D"]
+script = ExtResource("1_8mbtm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sdnmc")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_jiraf")
+disabled = true

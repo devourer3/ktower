@@ -1,0 +1,16 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bq1dacdha7tmr"]
+
+[ext_resource type="Texture2D" uid="uid://bpv1wcivr6ohb" path="res://tileset/un_placeable_tile.png" id="1_4rgsb"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_75lfi"]
+texture = ExtResource("1_4rgsb")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+uv_clipping = true
+custom_data_layer_0/name = ""
+custom_data_layer_0/type = 2
+sources/1 = SubResource("TileSetAtlasSource_75lfi")

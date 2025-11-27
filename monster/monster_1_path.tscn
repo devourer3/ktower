@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://qdsmlt0fe4qw"]
+
+[ext_resource type="PackedScene" uid="uid://dm2a10ihbclc2" path="res://monster/monster_1.tscn" id="1_v8k7o"]
+
+[node name="Monster_1_Path_Follow" type="PathFollow2D"]
+rotation = 0.0009157507
+rotates = false
+
+[node name="Monster1" parent="." instance=ExtResource("1_v8k7o")]

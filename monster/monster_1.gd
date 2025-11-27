@@ -3,7 +3,7 @@
 extends CharacterBody2D # 또는 Area2D 등
 
 # 이동 속도 (픽셀/초)
-var speed: float = 10.0 
+@export var speed: float = 100 
 
 # PathFollow2D의 progress_ratio를 저장할 변수
 var path_progress: float = 0.0

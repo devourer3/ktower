@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://daycfmhwvrfsj"]
+
+[ext_resource type="Script" uid="uid://cbredk0vu8lix" path="res://path/path_spawner.gd" id="1_a11w6"]
+[ext_resource type="PackedScene" uid="uid://qdsmlt0fe4qw" path="res://monster/monster_1_path.tscn" id="2_a11w6"]
+
+[sub_resource type="Curve2D" id="Curve2D_ryrav"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 28.999998, 97.99809, 0, 0, 0, 0, 1126.9954, 97.998085, 0, 0, 0, 0, 1126.9954, 225.75334, 0, 0, 0, 0, 28.999998, 225.71454, 0, 0, 0, 0, 28.999998, 356.47183, 0, 0, 0, 0, 1126.9954, 357.48544, 0, 0, 0, 0, 1128, 485.20187, 0, 0, 0, 0, 28.999998, 486.2155, 0, 0, 0, 0, 28.999998, 619.00006, 0, 0, 0, 0, 1128, 619)
+}
+point_count = 10
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_ryrav")
+script = ExtResource("1_a11w6")
+
+[node name="Monster_1_Path_Follow" parent="." instance=ExtResource("2_a11w6")]
+position = Vector2(28.999998, 97.99809)

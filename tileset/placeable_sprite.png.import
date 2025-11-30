@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfe2ud040khal"
-path="res://.godot/imported/lava_tower.png-daf981750a34ae046b8cfbde8a3b11c4.ctex"
+uid="uid://csdef6o2wc3sl"
+path="res://.godot/imported/placeable_sprite.png-3cf5599c8c3b48ed9e0c17efc83209ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tower/lava_tower.png"
-dest_files=["res://.godot/imported/lava_tower.png-daf981750a34ae046b8cfbde8a3b11c4.ctex"]
+source_file="res://tileset/placeable_sprite.png"
+dest_files=["res://.godot/imported/placeable_sprite.png-3cf5599c8c3b48ed9e0c17efc83209ea.ctex"]
 
 [params]
 

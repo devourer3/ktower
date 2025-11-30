@@ -1,0 +1,30 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://8213x8lv023j"]
+
+[ext_resource type="Texture2D" uid="uid://cwi3ym6j0aaay" path="res://tileset/placeable_tile.jpg" id="1_jxvxt"]
+[ext_resource type="Texture2D" uid="uid://bpv1wcivr6ohb" path="res://tileset/un_placeable_tile.png" id="2_1g35o"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcy6d"]
+texture = ExtResource("1_jxvxt")
+texture_region_size = Vector2i(64, 64)
+use_texture_padding = false
+1:0/0 = 0
+1:0/0/z_index = -1
+1:0/0/custom_data_0 = true
+0:0/0 = 0
+0:0/0/z_index = -1
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hb8oi"]
+texture = ExtResource("2_1g35o")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/z_index = -1
+1:0/0 = 0
+1:0/0/z_index = -1
+
+[resource]
+tile_size = Vector2i(64, 64)
+custom_data_layer_0/name = "placeable"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_qcy6d")
+sources/1 = SubResource("TileSetAtlasSource_hb8oi")

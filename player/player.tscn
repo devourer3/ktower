@@ -191,21 +191,23 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oul6g"]
-radius = 9.0
-height = 56.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yw30f"]
+size = Vector2(65, 62)
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(0, 31)
 script = ExtResource("1_rkbax")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -31)
 sprite_frames = SubResource("SpriteFrames_8t03j")
 animation = &"right_walk"
 autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.5, 0.5)
-position_smoothing_enabled = true
+position = Vector2(0, -31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_oul6g")
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -31)
+shape = SubResource("RectangleShape2D_yw30f")
+debug_color = Color(0.96669847, 2.8878452e-07, 0.4818917, 0.41960785)
